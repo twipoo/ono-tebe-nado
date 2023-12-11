@@ -1,1 +1,461 @@
-/* место для вашего кода */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.header {
+  box-sizing: border-box;
+  margin-top: 92px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.header-grid {
+  display: grid;
+  grid-template-columns: 452px 148px 452px;
+  grid-template-rows: 105px;
+}
+
+.header__nav {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  justify-self: start;
+  align-self: center;
+  padding-top: 3px;
+}
+
+.header__menu__nav {
+  display: flex;
+  list-style: circle;
+  gap: 32px;
+}
+/* убирает подчеркивание под активной ссылкой */
+.header__nav_links.active__menu {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* убирает круг перед активной страницей  */
+.header__menu__nav li:first-child {
+  list-style: none;
+}
+
+.header__logo {
+  width: 145px; /* Задайте требуемую ширину */
+  height: 106px; /* Задайте требуемую высоту */
+  overflow: hidden; /* Предотвращает выход из рамок */
+}
+
+.header__logo img {
+  width: 100%;
+  height: 100%; /* Заполняет доступное пространство */
+  object-fit: contain; /* Сохраняет соотношение сторон и позволяет отобразить полное изображение */
+}
+
+.header__logo-link {
+  padding: 0;
+}
+
+.contacts__header {
+  justify-self: end;
+}
+
+.contact__list {
+  color: #000;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24.3px;
+  list-style-type: none;
+  padding-top: 6px;
+  padding-right: 3px;
+}
+
+.non-underline {
+  text-decoration: none;
+}
+
+.text-underline-decoration {
+  text-underline-position: under;
+}
+
+.main {
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.overlay_background {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1100px;
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  margin-top: 96px;
+  margin-bottom: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.overlay_background_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  width: 1052px;
+  height: 355px;
+  z-index: 1;
+  padding-top: 165px;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+.title-first-word {
+  max-width: 1052px;
+  max-height: 115px;
+  display: flex;
+  justify-content: start;
+}
+
+.title-second-word {
+  max-width: 1052px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.titile-three-word {
+  max-width: 1052px;
+  max-height: 100px;
+  display: flex;
+  justify-content: end;
+  padding-top: 32px;
+}
+
+.letter-spacing-low {
+  letter-spacing: 30px;
+}
+
+.second-word {
+  letter-spacing: 60px;
+}
+
+.test-space {
+  letter-spacing: 30px;
+}
+
+.subtitle-and-buttom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 228px;
+}
+
+.subtitle {
+  padding-top: 215px;
+  padding-left: 84px;
+  display: block;
+  max-width: 633px;
+  max-height: 28px;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.space {
+  padding-right: 23px;
+}
+
+.space-first {
+  padding-right: 22px;
+}
+
+.space-two {
+  padding-right: 28px;
+}
+
+.button {
+  align-self: end;
+  justify-self: end;
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 11px 32px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+}
+
+.button-bet {
+  text-decoration: none;
+}
+
+.lots {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 74px 600px 55px;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title-lots title-lots title-lots"
+    "card-link-1 card-link-2 card-link-3"
+    "show-more-lots . .";
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+
+.card-link-1{
+  grid-area: 2 / 1;
+}
+
+.card-link-2{
+  grid-area: 2 / 2;
+}
+
+.card-link-3{
+  grid-area: 2 / 3;
+}
+
+.title-lots{
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+
+.card {
+  height: 600px; /* Устанавливаем высоту карточки */
+  background-size: cover; /* Растягиваем фоновую картинку на всю площадь карточки */
+  background-position: center; /* Центрируем фоновую картинку */
+  position: relative; /* Устанавливаем позиционирование, чтобы оверлей отображался правильно */
+}
+
+.card-block {
+  display: block;
+  text-decoration: none; /* Убираем подчеркивание текста ссылки */
+}
+
+.overlay {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  pointer-events: none; /* Разрешаем события указателя через оверлей */
+}
+
+.card:hover .overlay, .overlay {
+  display: block; /* Отображаем оверлей всегда и при наведении на карточку */
+}
+
+
+.card-content {
+  position: relative;
+  display: block;
+  text-align: start;
+  color: #fff;
+  z-index: 1; /* Устанавливаем z-index, чтобы контент был над оверлеем */
+}
+
+.title-card{
+  display: block;
+  max-width: 292px;
+  max-height: 70px;
+  padding-top: 50px;
+  padding-left: 40px;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 26.4px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+}
+
+.card__text__first{
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 325px;
+}
+
+.card__text__second{
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 120px;
+}
+
+.card__text__thre{
+  display: block;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 217px;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+}
+
+.lots__look-more-link{
+  grid-area: 3 / 1;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: end;
+  justify-self: start;
+  padding-left: 26px;
+  text-underline-offset: 4px;
+}
+
+.about{
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 1052px;
+  max-height: 596px;
+  margin-top: 179px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 166px;
+}
+
+.logo__column, .about__culumn{
+  padding: 20px; /* Добавление отступов для разделения */
+  border: 1px solid #000;
+}
+
+.logo__column{
+  display: flex;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+  margin-right: 95px;
+  margin-left: 95px;
+}
+
+.logo-white-svg{
+  padding: 43px 24px;
+}
+
+
+.about__culumn{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 622px;
+}
+
+.about__culumn__title{
+  display: block;
+  padding-top: 102px;
+  padding-left: 24px;
+  min-width: 318px;
+  min-height: 44px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.about__column__content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-left: 24px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%;
+}
+
+
+.footer{
+ display: grid;
+ grid-template-columns: 240px 150px 240px;
+ grid-template-rows: 110px;
+ gap: 211px;
+ margin-bottom: 90px;
+ margin-left: 24px;
+ margin-right: 24px;
+}
+
+.footer__adress{
+  padding-top: 10px;
+}
+
+.footer_menu_list{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.footer__social{
+  display: flex;
+  max-width: 240px;
+  max-height: 48px;
+  padding-top: 15px;
+}
+
