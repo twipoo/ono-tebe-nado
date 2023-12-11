@@ -239,7 +239,7 @@ body {
   text-decoration: none;
 }
 
-.lots {  
+.lots {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 74px 600px 55px;
@@ -254,19 +254,19 @@ body {
 }
 
 
-.card-link-1{
+.card-link-1 {
   grid-area: 2 / 1;
 }
 
-.card-link-2{
+.card-link-2 {
   grid-area: 2 / 2;
 }
 
-.card-link-3{
+.card-link-3 {
   grid-area: 2 / 3;
 }
 
-.title-lots{
+.title-lots {
   color: #000;
   font-family: Raleway;
   font-size: 40px;
@@ -314,7 +314,7 @@ body {
   z-index: 1; /* Устанавливаем z-index, чтобы контент был над оверлеем */
 }
 
-.title-card{
+.title-card {
   display: block;
   max-width: 292px;
   max-height: 70px;
@@ -330,21 +330,21 @@ body {
   text-underline-offset: 3px;
 }
 
-.card__text__first{
+.card__text__first {
   display: block;
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 325px;
 }
 
-.card__text__second{
+.card__text__second {
   display: block;
   padding-left: 40px;
   padding-right: 40px;
   margin-top: 120px;
 }
 
-.card__text__thre{
+.card__text__thre {
   display: block;
   padding-left: 40px;
   padding-right: 40px;
@@ -356,7 +356,7 @@ body {
   line-height: 120%; /* 24px */
 }
 
-.lots__look-more-link{
+.lots__look-more-link {
   grid-area: 3 / 1;
   color: #000;
   font-family: Raleway;
@@ -370,7 +370,7 @@ body {
   text-underline-offset: 4px;
 }
 
-.about{
+.about {
   display: flex;
   flex-wrap: nowrap;
   max-width: 1052px;
@@ -381,12 +381,12 @@ body {
   margin-bottom: 166px;
 }
 
-.logo__column, .about__culumn{
+.logo__column, .about__culumn {
   padding: 20px; /* Добавление отступов для разделения */
   border: 1px solid #000;
 }
 
-.logo__column{
+.logo__column {
   display: flex;
   width: 240px;
   height: 240px;
@@ -396,18 +396,18 @@ body {
   margin-left: 95px;
 }
 
-.logo-white-svg{
+.logo-white-svg {
   padding: 43px 24px;
 }
 
 
-.about__culumn{
+.about__culumn {
   display: flex;
   flex-wrap: wrap;
   max-width: 622px;
 }
 
-.about__culumn__title{
+.about__culumn__title {
   display: block;
   padding-top: 102px;
   padding-left: 24px;
@@ -423,7 +423,7 @@ body {
   margin-bottom: 100px;
 }
 
-.about__column__content{
+.about__column__content {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
@@ -437,7 +437,7 @@ body {
 }
 
 
-.footer{
+.footer {
  display: grid;
  grid-template-columns: 240px 150px 240px;
  grid-template-rows: 110px;
@@ -447,11 +447,11 @@ body {
  margin-right: 24px;
 }
 
-.footer__adress{
+.footer__adress {
   padding-top: 10px;
 }
 
-.footer_menu_list{
+.footer_menu_list {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -459,7 +459,7 @@ body {
   padding-top: 15px;
 }
 
-.footer__social{
+.footer__social {
   display: flex;
   max-width: 240px;
   max-height: 48px;
