@@ -9,7 +9,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 auto;
 }
 
 .header {
@@ -124,7 +123,6 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-
 .title {
   width: 1052px;
   height: 355px;
@@ -139,14 +137,12 @@ body {
   text-transform: uppercase;
 }
 
-
 .title-first-word {
   max-width: 1052px;
   max-height: 115px;
   display: flex;
   justify-content: start;
 }
-
 
 .title-second-word {
   max-width: 1052px;
@@ -156,7 +152,6 @@ body {
   padding-top: 12px;
 }
 
-
 .titile-three-word {
   max-width: 1052px;
   max-height: 100px;
@@ -165,16 +160,13 @@ body {
   padding-top: 32px;
 }
 
-
 .letter-spacing-low {
   letter-spacing: 30px;
 }
 
-
 .second-word {
   letter-spacing: 60px;
 }
-
 
 .test-space {
   letter-spacing: 30px;
@@ -189,7 +181,6 @@ body {
 .subtitle {
   padding-top: 215px;
   padding-left: 84px;
-  display: block;
   max-width: 633px;
   max-height: 28px;
   display: flex;
@@ -253,7 +244,6 @@ body {
   margin-right: 24px;
 }
 
-
 .card-link-1 {
   grid-area: 2 / 1;
 }
@@ -276,7 +266,6 @@ body {
   text-transform: uppercase;
   padding-left: 24px;
 }
-
 
 .card {
   height: 600px; /* Устанавливаем высоту карточки */
@@ -301,10 +290,10 @@ body {
   pointer-events: none; /* Разрешаем события указателя через оверлей */
 }
 
-.card:hover .overlay, .overlay {
+.card:hover .overlay,
+.overlay {
   display: block; /* Отображаем оверлей всегда и при наведении на карточку */
 }
-
 
 .card-content {
   position: relative;
@@ -381,7 +370,8 @@ body {
   margin-bottom: 166px;
 }
 
-.logo__column, .about__culumn {
+.logo__column,
+.about__culumn {
   padding: 20px; /* Добавление отступов для разделения */
   border: 1px solid #000;
 }
@@ -399,7 +389,6 @@ body {
 .logo-white-svg {
   padding: 43px 24px;
 }
-
 
 .about__culumn {
   display: flex;
@@ -436,15 +425,14 @@ body {
   line-height: 115%;
 }
 
-
 .footer {
- display: grid;
- grid-template-columns: 240px 150px 240px;
- grid-template-rows: 110px;
- gap: 211px;
- margin-bottom: 90px;
- margin-left: 24px;
- margin-right: 24px;
+  display: grid;
+  grid-template-columns: 240px 150px 240px;
+  grid-template-rows: 110px;
+  gap: 211px;
+  margin-bottom: 90px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .footer__adress {
@@ -465,4 +453,3 @@ body {
   max-height: 48px;
   padding-top: 15px;
 }
-
