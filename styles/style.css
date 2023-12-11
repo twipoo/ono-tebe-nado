@@ -124,6 +124,7 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+
 .title {
   width: 1052px;
   height: 355px;
@@ -138,12 +139,14 @@ body {
   text-transform: uppercase;
 }
 
+
 .title-first-word {
   max-width: 1052px;
   max-height: 115px;
   display: flex;
   justify-content: start;
 }
+
 
 .title-second-word {
   max-width: 1052px;
@@ -153,6 +156,7 @@ body {
   padding-top: 12px;
 }
 
+
 .titile-three-word {
   max-width: 1052px;
   max-height: 100px;
@@ -161,17 +165,21 @@ body {
   padding-top: 32px;
 }
 
+
 .letter-spacing-low {
   letter-spacing: 30px;
 }
+
 
 .second-word {
   letter-spacing: 60px;
 }
 
+
 .test-space {
   letter-spacing: 30px;
 }
+
 
 .subtitle-and-buttom {
   display: grid;
