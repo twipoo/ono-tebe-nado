@@ -345,11 +345,7 @@
 }
 
 .logo__column {
-  padding: 20px; /* Добавление отступов для разделения */
-  border: 1px solid #000;
-}
-
-.logo__column {
+  padding: 20px;
   display: flex;
   width: 240px;
   height: 240px;
