@@ -344,8 +344,7 @@
   margin-bottom: 166px;
 }
 
-.logo__column,
-.about__culumn {
+.logo__column {
   padding: 20px; /* Добавление отступов для разделения */
   border: 1px solid #000;
 }
@@ -417,7 +416,6 @@
   font-weight: 400;
   line-height: 24.3px;
   list-style-type: none;
-  max-width: 240px;
 }
 
 .footer_menu_list {
